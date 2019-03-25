@@ -1,0 +1,31 @@
+<head>
+
+  <link ref="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+
+</head>
+
+<body>
+  <div class="card mb-3">
+    <img src="assets/images/20190317_144500.jpg" alt="Card image">
+    <h3 class="card-header" style="font-family: Playfair Display, Georgia, serif;">Christian Rodriguez</h3>
+    <div class="card-body">
+      <p class="card-text">Full Stack Developer in Seattle<br>
+      </p>
+    </div>
+
+    <button type="button" class="btn btn-secondary btn-lg btn-block"[routerLink]="['/home']">About</button>
+    <button type="button" class="btn btn-secondary btn-lg btn-block"[routerLink]="['/projects']">Projects</button>
+    <button type="button" class="btn btn-secondary btn-lg btn-block"[routerLink]="['/contact']">Contact</button>
+
+    <div class="card-footer text-muted">
+      2019&copy; All rights reserved
+    </div>
+  </div>
+
+
+  <div id="sections" [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+
+
+</body>
