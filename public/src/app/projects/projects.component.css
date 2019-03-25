@@ -1,0 +1,16 @@
+img {
+    height: 100px;
+    margin-left: 5%;
+    background: rgba(48, 48, 48);
+    border-radius: .25rem;
+    padding: 2px;
+    transition: all .2s ease-in-out; 
+}
+
+img:hover {
+    transform: scale(3);
+}
+
+.card{
+    z-index: 1;
+}

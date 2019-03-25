@@ -1,0 +1,10 @@
+
+.bd-example img{
+    border-radius: .5rem;
+}
+
+.carousel-caption{
+    background: rgba(48, 48, 48, 0.6);
+    border-radius: 1rem;
+    padding: 5px;
+} 
